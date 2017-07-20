@@ -21,3 +21,14 @@ Learn how to setup Webpack 2 from scratch, by following the complete playlist on
 4. New browser window should open with a green text on pink background.
 
 Don't forget to [subscribe to my channel](https://www.youtube.com/channel/UC7O6CntQoAI-wYyJxYiqNUg?sub_confirmation=1) for more front-end videos.
+
+## Are you getting localhost:8080/undefined ?
+
+As [Mikael-Sundstrom](https://github.com/Ihatetomatoes/webpack-101-starter/issues/2) pointed out, you can solve it by adding this to your config.
+
+```js
+devServer: {
+    open: true,
+    openPage: '', //add this to solve it
+}
+```
